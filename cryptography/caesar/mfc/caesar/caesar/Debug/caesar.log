@@ -1,0 +1,23 @@
+﻿Build started 3/18/2015 2:24:11 AM.
+     1>Project "D:\XACXSJ\caesar\caesar\caesar.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\caesar.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\caesar.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt caesar.cpp caesarDlg.cpp
+         caesarDlg.cpp
+         caesar.cpp
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /IDebug\ /nologo /fo"Debug\caesar.res" caesar.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\XACXSJ\caesar\Debug\caesar.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\XACXSJ\caesar\Debug\caesar.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\XACXSJ\caesar\Debug\caesar.lib" /MACHINE:X86 Debug\caesar.res
+         Debug\caesar.obj
+         Debug\caesarDlg.obj
+         Debug\stdafx.obj
+         LINK : D:\XACXSJ\caesar\Debug\caesar.exe not found or not built by the last incremental link; performing full link
+         caesar.vcxproj -> D:\XACXSJ\caesar\Debug\caesar.exe
+     1>Done Building Project "D:\XACXSJ\caesar\caesar\caesar.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.99
