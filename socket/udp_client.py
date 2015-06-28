@@ -13,7 +13,7 @@ def receive():
     while 1:
         received = str(sock.recv(1024), "utf-8")
         if len(received) != 0:
-            print("Received: {}".format(received))
+            print(received)
 
 def main():
     threads = []
@@ -31,7 +31,9 @@ if __name__ == '__main__':
     print('------------------')
     HOST = input('HOST: ')
     PORT = int(input('PORT: '))
+    name = input('nickname: ')
+    print('------------------')
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    data = "hello"
+    data = name
     sock.sendto(bytes(data + "\n", "utf-8"), (HOST, PORT))
     main()

@@ -1,23 +1,23 @@
 import socketserver
 
-clientSocket = []
+clientSocket = {}
 
 class MyUDPHandler(socketserver.BaseRequestHandler):
     def handle(self):
         global clientSocket
-        if self.client_address not in clientSocket:
-            clientSocket.append(self.client_address)
         data = self.request[0].strip()
         socket = self.request[1]
+        if self.client_address not in clientSocket:
+            clientSocket[self.client_address] = data
         if data == b'88':
             clientSocket.pop(clientSocket.index(self.client_address))
         print(len(clientSocket), 'client connected')
-        print("{} wrote:".format(self.client_address))
+        print("{} wrote:".format(clientSocket[self.client_address]))
         print(data)
         for client in clientSocket:
             if client != self.client_address:
                 print('sending to ', client)
-                socket.sendto(data, client)
+                socket.sendto(clientSocket[self.client_address] + b': ' + data, client)
 
 if __name__ == "__main__":
     print('------------------')
